@@ -13,20 +13,20 @@ function startTimer() {
     milSec++;
    document.querySelector('.milsec').innerHTML = checkZero(milSec);
 
-   if(milSec >= 60) {
+   if(milSec > 60) {
        milSec = 0;
        sec++  
        document.querySelector('.seconds').innerHTML = checkZero(sec);
    }
 
-   if(sec >= 60) {
+   if(sec > 60) {
        milSec = 00;
        sec = 00
        min++  
        document.querySelector('.minutes').innerHTML = checkZero(min);
    }
 
-   if(min >= 60) {
+   if(min > 60) {
        milSec = 00;
        sec = 00
        min = 00;
